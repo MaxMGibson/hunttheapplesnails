@@ -7,32 +7,94 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.app-root {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: #f5f6f8;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.sidebar {
+  width: 200px;
+  background: #263238;
+  color: #fff;
+  min-height: 100vh;
+  padding: 20px 16px;
+  box-sizing: border-box;
+}
+.sidebar-title {
+  font-weight: 700;
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.sidebar li {
+  margin: 8px 0;
+}
+.sidebar a {
+  color: #cfd8dc;
+  text-decoration: none;
+}
+.sidebar a:hover {
+  color: #fff;
+}
+
+.content {
+  flex: 1 1 auto;
+  padding: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login-container {
+  display: block;
+}
+.login-form {
+  width: 360px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  background: #fff;
+  color: #222;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+.login-form h2 {
+  margin-top: 0;
+}
+.login-form label {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+.login-form input {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 6px;
+  box-sizing: border-box;
+}
+.login-form button {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 8px;
+  background: #282c34;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+.login-links {
+  margin-top: 10px;
+}
+.login-info {
+  margin-top: 12px;
+  color: #2b6cb0;
 }
